@@ -1,5 +1,5 @@
 /* Loader overlay */
-/* #loader-overlay {
+ #loader-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,10 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  } 
   
   /* Loading bar */
-  /* #loading-bar {
+   #loading-bar {
     width: 0;
     height: 1px;
     background-color: #caca67;
@@ -29,31 +29,28 @@
     100% {
       width: 90%;
     }
-  } */
+  } 
 
  
   
   
   /* Curtain effect */
-  /* #curtain {
+   #curtain {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(12, 12, 12);
     z-index: 10000;
     transform: translateY(100%);
     transition: transform 1s ease;
   }
-   */
+   
   /* Content */
 #content{
     width: 100%; 
     height: 100vh; 
-    position: absolute;
-    top: 0px;
-    left: 0px; 
 }
 
  
@@ -73,13 +70,13 @@ img{
     left: 45%;
     font-size: 25px;
 }
-/* .carOne{
+.carOne{
     position: absolute;
     top: 28%;
     left: 30%;
     width: 400px;
-} */
-/* .carOne{
+}
+.carOne{
     animation: car 2s forwards;
   }
   @keyframes car {
@@ -91,60 +88,15 @@ img{
         left: 65%;
         
     }
-  } */
-  /* .center1{
-    position: absolute;
-    top: 39%;
-    left: 2%;
-    color: white;
-    animation: logo1 2s forwards;
-    font-size: 30px;
   }
-  .center2{
-    position: absolute;
-    top: 34%;
-    left: 14%;
-    color: white;
-    font-size: 50px;
-    color: rgb(217, 201, 81);
-    animation: logo2 2s forwards;
-  } */
- 
-  @keyframes logo1 {
-    0%{
-       position: absolute;
-       left: 2%;
-       
-    }
-    100%{
-        left: 25%;
-    }
-  }
-  @keyframes logo2 {
-    0%{
-       position: absolute;
-       left: 15%;
-       
-    }
-    100%{
-        left: 40%;
-    }
-  }
-
-
-
-
-
-
+  
  
 
 
 
 
+/* Swiper */
 
-
-
-  /* Swiper css */
 
   html,
   body {
@@ -153,10 +105,10 @@ img{
   }
 
   body {
-    background: #eee;
+    background: #222;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #000000;
     margin: 0;
     padding: 0;
   }
@@ -173,19 +125,25 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    position: relative;
+    
   }
-
+  #swiperone .swiper-slide::before{
+    content: ''; /* Necessary to make the pseudo-element appear */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Shadow color */
+  }
 
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
   }
- 
- 
 
   .autoplay-progress {
     position: absolute;
@@ -199,7 +157,6 @@ img{
     justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
-    /* display: none; */
   }
 
   .autoplay-progress svg {
@@ -216,35 +173,45 @@ img{
     stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
-    /* display: none; */
   }
+
+ .swiper-pagination-bullet{
+  background-color: #f5b754;
+  padding: 3px;
+  border: 1px solid white;
+ }
 
 
 
- 
-  .swiper-button-next{
-    /* display: none; */
-  }
-  .swiper-button-prev{
-    /* display: none; */
-  }
+
+
+
  
 
 
 
   /* Navbar */
 
+ 
+
+ 
   .navbar{
-    background-color: #565656;
+    background-color: rgb(28, 27, 27);
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
-    height: 13%;
+    height: 12%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   border-radius: 0px 0px 90px 90px;
   }
   .navbarContent{
     display: flex;
     gap: 40px;
+    /* margin-left: 60px; */
   }
   .navbarContent li{
     list-style: none;
@@ -256,6 +223,7 @@ img{
   .logo{
     font-size: 35px;
     text-shadow: 5px 3px rgb(26, 26, 26);
+    
   }
   #callIcon{
     border: 1px solid #ffffff ;
@@ -273,7 +241,7 @@ img{
     display: flex;
     align-items: center;
     gap: 15px;
-    
+    /* margin-left: 60px; */
   } 
 #number{
   font-size: 18px;
@@ -281,6 +249,7 @@ img{
 #signupbtn{
   text-decoration: none;
   color: white;
+  /* margin-left: 100px ; */
 }
 #userInfo{
   
@@ -309,7 +278,165 @@ img{
 }
 #signupbtn:hover #loginBtn {
   color: #000000;
+} 
+ 
+
+
+
+/*          Hero section           */
+
+.slideOneContent{
+  color: white;
+  text-align: start;
+  position: absolute;
+  top: 20%;
+  left: 10%; 
+
+  
 }
+.ananya{
+  font-size: 90px;
+ 
+}
+.slideOneContent p{
+  color: #f5b754;
+  font-size: 35px;
+  padding-bottom: 100px;
+}
+.slideTwoContent {
+  color: white;
+  text-align: start;
+  position: absolute;
+  top: 20%;
+  left: 10%; 
+}
+.ananya1{
+  font-size: 70px;
+}
+
+.slideTwoContent p {
+  color: #f5b754;
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+.slideThreeContent {
+  color: white;
+  text-align: start;
+  position: absolute;
+  top: 20%;
+  left: 10%; 
+}
+.ananya2{
+  font-size: 70px;
+}
+.slideThreeContent p {
+  color: #f5b754;
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+.slideFourContent {
+  color: white;
+  text-align: start;
+  position: absolute;
+  top: 20%;
+  left: 10%; 
+}
+.ananya3{
+  font-size: 70px;
+}
+.slideFourContent p {
+  color: #f5b754;
+  font-size: 50px;
+  padding-bottom: 100px;
+  
+}
+#SFC{
+  font-size: 35px;
+  color: #f5b754;
+  
+}
+
+/* Section 2 */
+
+.sec2{
+  height: 90vh;
+  background: #222;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.sec2 h1{
+  color: #f5b754;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+#our{
+  color: white;
+  margin-right: 10px;
+}
+
+.swiper {
+      /* width: 100%; */
+      /* height: 100vh; */
+      
+    }
+
+    #swiperContainer .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 50px;
+      border: 1px solid white;
+      border-bottom: 50px solid white;
+      
+    }
+   
+    #swiperContainer .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px ;
+     
+    }
+    #swiperContainer .swiper-slide:hover{
+      background-color: #f5b754;
+      border-bottom: 50px solid #f5b754;
+      border-color: #f5b754;
+      transition: all 1s;
+      padding: 12px;
+    }
+   
+
+#swiper{
+  height: 500px;
+  background-color: #222;
+  width: 85%; 
+  
+}
+#swiperContainer{
+  background-color: #222;
+  height: 340px;
+  
+}
+
+.sec2para{
+  position: absolute;
+  top: 95%;
+  left: 20%;
+  font-weight: 900;
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
 
 
 
