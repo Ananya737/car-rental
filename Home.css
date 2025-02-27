@@ -353,7 +353,7 @@ img{
 #SFC{
   font-size: 35px;
   color: #f5b754;
-  
+  font-style: italic;
 }
 
 /* Section 2 */
@@ -417,7 +417,6 @@ img{
   height: 500px;
   background-color: #222;
   width: 85%; 
-  
 }
 #swiperContainer{
   background-color: #222;
