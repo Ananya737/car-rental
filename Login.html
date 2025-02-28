@@ -18,22 +18,41 @@
 
         <div class="logincontainer">
             <h1 id="heading">Login </h1>
-<form >
-            <p id="errname"></p>
-            <div class="username">Username<input type="text" id="inpname"></div>
 
-            <p id="errpass"></p>
-            <div class="pass">Password<input type="text" id="inppass"></div>
+
+
+
+
+
+
+
+         <form >
+            <p id="loginerrname"></p>
+            <div class="username">Username<input type="text" id="loginname"></div>
+
+            <p id="loginerrpass"></p>
+            <div class="pass">Password<input type="text" id="loginpass"></div>
             <div id="checkbox"><input type="checkbox">Remember me</div>
             <div class="submit">
-                <!-- <a href="#" id="login" onclick=" return login()">Login</a> -->
-                 <input type="submit" id="login" onclick=" return loginn()" value="Login">
+                
+                <input type="submit" id="login" onclick=" return loginn()" value="Login">
                 <a href="#" id="forgot">Forgot password?</a>
             </div>
             <div id="bottom">Don't have an account?
-            <a href="#">Sign up</a>
+            <a href="./SignUp.html">Sign up</a>
             </div>
         </form>
+
+
+
+
+
+
+
+
+
+
+
 
         <input type="submit"  onclick="logout()">
         </div>
@@ -47,7 +66,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

@@ -1,27 +1,137 @@
-let inpname=document.querySelector("#inpname");
-let inppass=document.querySelector("#inppass");
+
+let uppp=()=>{
+let inpname=document.querySelector("#name").value;
+let inpemail=document.querySelector("#email").value;
+let inpnum=document.querySelector("#num").value;
+let inppass=document.querySelector("#pass").value;
+let inpcpass=document.querySelector("#cpass").value;
 
 let errname=document.querySelector("#errname");
+let erremail=document.querySelector("#erremail");
+let errnum=document.querySelector("#errnum");
 let errpass=document.querySelector("#errpass");
+let errcpass=document.querySelector("#errcpass");
 
-let loginn=()=>{
+if(inpname==""){
+    errname.innerHTML="*Please enter your name*";
+    return false;
+}
+if(inpemail==""){
+    erremail.innerHTML="*Please enter your email*";
+    errname.innerHTML="";
+    return false;
+}
+else if(!(inpemail.includes("@") && inpemail.includes(".com"))){
+    erremail.innerHTML="*Please enter valid email*";
+    errname.innerHTML="";
+    return false;
+}
+if(inpnum==""){
+    errnum.innerHTML="*Please enter mobile number*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    return false;
+}
+else if(isNaN(inpnum)){
+    errnum.innerHTML="*Please enter numbers only*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    return false;
+}
+else if(inpnum.length!=10){
+    errnum.innerHTML="*Please enter 10 digits*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    return false;
+}
+if(inppass==""){
+    errpass.innerHTML="*Please enter password*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    errnum.innerHTML="";
+    return false;
+}
+else if(inppass.length<8 || inppass.length>10){
+    errpass.innerHTML="*Password length must be between 8 and 10*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    errnum.innerHTML="";
+    return false;
+}
+else if(!(inppass.match(/[0123456789]/) &&
+        inppass.match(/[!@#$%^&*()]/) &&
+        inppass.match(/[a-z]/) &&
+        inppass.match(/[A-Z]/)))
+    {
+    errpass.innerHTML="*Enter strong password*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    errnum.innerHTML="";
+    return false;
+}
+if(inpcpass==""){
+    errcpass.innerHTML="*Please confirm password*";
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    errnum.innerHTML="";
+    errpass.innerHTML="";
+    return false;
+}
+else if(inppass!=inpcpass){
+    errcpass.innerHTML="*Password must be same*";
+    document.querySelector("#cpass").value = ""
+    document.querySelector("#cpass").focus()
+    errname.innerHTML="";
+    erremail.innerHTML="";
+    errnum.innerHTML="";
+    errpass.innerHTML="";
+    return false;
+}
 
 
-    localStorage.setItem("Name",inpname.value);
-    localStorage.setItem("Password",inppass.value);
+localStorage.setItem("Name",inpname);
+localStorage.setItem("Email",inpemail);
+localStorage.setItem("Number",inpnum);
+localStorage.setItem("Password",inppass);
+localStorage.setItem("Confirm password",inpcpass);
 
-    if(inpname.value==""){
-        errname.innerHTML="*Please enter your name*";
-        return false;
+
+
+
+
+location.href="Login.html";
+return false;
+
+}
+
+
+
+
+
+let loginn=()=>
+{
+    let loginname=document.querySelector("#loginname").value;
+    let loginpass=document.querySelector("#loginpass").value;
+
+    let loginerrname=document.querySelector("loginerrname");
+    let loginerrpass=document.querySelector("loginerrpass");
+
+    let cname=localStorage.getItem("Name");
+    let cpass=localStorage.getItem("Password");
+
+    if(loginname==cname && loginpass==cpass){
+        location.href="Index.html";
     }
-    if(inppass.value==""){
-        errpass.innerHTML="*Please enter your password*";
-        return false;
+    else{
+        Swal.fire("Incorrect username or password!");
     }
-
     
+
+    return false;
 }
 
 let logout=()=>{
     localStorage.clear();
 }
+
+
