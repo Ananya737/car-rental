@@ -1,0 +1,110 @@
+.sec1{
+    height: 100vh;
+    background: url(./car\ 1.jpg) no-repeat center center/cover;
+    position: relative;
+    
+   
+}
+.sec1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+/* Navbar  */
+
+.navbar{
+    background-color: rgb(28, 27, 27);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 12%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   border-radius: 0px 0px 90px 90px;
+  }
+  .navbarContent{
+    display: flex;
+    gap: 40px;
+    /* margin-left: 60px; */
+  }
+  .navbarContent li{
+    list-style: none;
+    font-size: 17px;
+  }
+  #v{
+    color: #f5b754 ;
+  }
+  .logo{
+    font-size: 35px;
+    text-shadow: 5px 3px rgb(26, 26, 26);
+    
+  }
+  #callIcon{
+    border: 1px solid #ffffff ;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 25px;
+    color: #f5b754;
+  }
+  #callIcon:hover {
+    background-color: #f5b754;
+    color: black;
+    border: none;
+  }
+  #contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* margin-left: 60px; */
+  } 
+#number{
+  font-size: 18px;
+}
+#signupbtn{
+  text-decoration: none;
+  color: white;
+  /* margin-left: 100px ; */
+}
+#userInfo{
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#userIcon{
+  font-size: 25px;
+  color: #f5b754;
+}#userInfo p{
+  font-size: 16px;
+  color: #ffffff;
+}
+#signupbtn{
+   border: 1px solid #ffffff ;
+   border-radius: 70px;
+   padding: 3px 10px 3px 10px;
+}
+#signupbtn:hover{
+  background-color: #f5b754;
+  border: none;
+}
+#signupbtn:hover #userIcon  {
+  color: #000000;
+}
+#signupbtn:hover #loginBtn {
+  color: #000000;
+} 
