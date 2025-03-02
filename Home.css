@@ -296,12 +296,31 @@ img{
 }
 .ananya{
   font-size: 90px;
- 
 }
 .slideOneContent p{
   color: #f5b754;
   font-size: 35px;
   padding-bottom: 100px;
+  
+}
+.slideOneContent a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white ;
+  padding: 20px 40px 20px 40px;
+  border-radius: 40px;
+  position: absolute;
+  bottom: 10%;
+  font-weight: 500;
+}
+.slideOneContent a:hover{
+  background-color: #f5b754;
+  color: black;
+  border: none;
+  padding-right: 300px;
+  padding-left: 300px;
+  transition: all 0.5s;
+  
 }
 .slideTwoContent {
   color: white;
