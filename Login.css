@@ -251,6 +251,9 @@ input{
       text-decoration: none;
       color: white;
     }
+    .navbarContent li:hover{
+      color: #f5b754;
+    }
     #v{
       color: #f5b754 ;
     }

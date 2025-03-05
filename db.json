@@ -1,0 +1,24 @@
+{
+  "car": [
+    {
+      "id": "0ab6",
+      "name": "Ananya Sahu",
+      "pickUp": "Pick up location",
+      "dropOff": "Drop off location",
+      "email": "",
+      "chooseCar": "Choose Car",
+      "pickUpDate": "",
+      "returnDate": ""
+    },
+    {
+      "id": "eae7",
+      "name": "",
+      "pickUp": "Pick up location",
+      "dropOff": "Drop off location",
+      "email": "",
+      "chooseCar": "Choose Car",
+      "pickUpDate": "",
+      "returnDate": ""
+    }
+  ]
+}

@@ -63,20 +63,20 @@
 
                 <select id="pickUp">
                     <option value="Pick up location">Pick up location</option>
-                    <option value="Bhopal" selected>Bhopal</option>
-                    <option value="Sagar" selected>Sagar</option>
-                    <option value="Indore" selected>Indore</option>
-                    <option value="Jabalpur" selected>Jabalpur</option>
-                    <option value="Vidisha" selected>Vidisha</option>
+                    <option value="Bhopal" >Bhopal</option>
+                    <option value="Sagar" >Sagar</option>
+                    <option value="Indore" >Indore</option>
+                    <option value="Jabalpur" >Jabalpur</option>
+                    <option value="Vidisha" >Vidisha</option>
                 </select>
 
                 <select id="dropOff">
                     <option value="Drop off location" selected>Drop off location</option>
-                    <option value="Bhopal" selected>Bhopal</option>
-                    <option value="Sagar" selected>Sagar</option>
-                    <option value="Indore" selected>Indore</option>
-                    <option value="Jabalpur" selected>Jabalpur</option>
-                    <option value="Vidisha" selected>Vidisha</option>
+                    <option value="Bhopal" >Bhopal</option>
+                    <option value="Sagar" >Sagar</option>
+                    <option value="Indore" >Indore</option>
+                    <option value="Jabalpur" >Jabalpur</option>
+                    <option value="Vidisha" >Vidisha</option>
                 </select>
                 
             </div>
@@ -86,11 +86,11 @@
                 
                 <select id="chooseCar">
                     <option value="Choose Car" selected>Choose Car</option>
-                    <option value="All" selected>All</option>
-                    <option value="Luxury Cars" selected>Luxury Cars</option>
-                    <option value="Sport Cars" selected>Sport Cars</option>
-                    <option value="SUVs" selected>SUVs</option>
-                    <option value="Convertible" selected>Convertible</option>
+                    <option value="All" >All</option>
+                    <option value="Luxury Cars" >Luxury Cars</option>
+                    <option value="Sport Cars" >Sport Cars</option>
+                    <option value="SUVs" >SUVs</option>
+                    <option value="Convertible" >Convertible</option>
                 </select>
                        <!-- doubt -->
                 <input type="date" id="pickDate" placeholder="Pick up date">              
@@ -104,7 +104,7 @@
         </div>
 
         <div class="rentNow">
-            <input type="submit" value="Rent now" id="rentNow">
+            <input type="submit" value="Rent now" id="rentNow" onclick="return rentt()">
         </div>
     </form>
 
@@ -126,7 +126,7 @@
 <script>
   AOS.init();
 </script>
-
+<script src="./CRUD.js"></script>
 
     <script src="Login.js"></script>
 </body>

@@ -53,6 +53,9 @@ body::before{
     list-style: none;
     font-size: 17px;
   }
+  .navbarContent li:hover{
+    color: #f5b754;
+  }
   #v{
     color: #f5b754 ;
   }
