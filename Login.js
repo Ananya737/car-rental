@@ -201,3 +201,23 @@ let logout=()=>{
 
 
 
+let rentNow=()=>{
+    if(localStorage.getItem("Name")){
+        location.href="BookingForm.html";
+    }
+    else{
+        alert("Please login first");
+    }
+}
+
+
+
+// let checkLogin=()=>{
+//     if(localStorage.getItem("Name")){
+//         document.querySelector("#newLogin").style.display="none" ;
+//     }
+//     else{
+//         document.querySelector("#signupbtn").style.display="none" ;
+//         document.querySelector("#newLogin").style.display="block" ;
+//     }
+// }

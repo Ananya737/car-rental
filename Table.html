@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Table.css">
     <title>Document</title>
 </head>
 <body onload="fetchData()">
 
     <table border="4" cellSpacing="5px" cellPadding="15px" id="display">
+        <div><input type="text" placeholder="Search" id="inpsearch" oninput="Searchh()"></div>
         <thead>
         <tr>
-            <th>Name</th>
+            <th id="th">Name</th>
             <th>Number</th>
             <th>Email</th>
             <th>Choose Car</th>
@@ -19,7 +21,7 @@
             <th>Pick up date</th>
             <th>Return date</th>
             <th>Delete</th>
-            <th>Update</th>
+            <th id="lastTh">Update</th>
         </tr>
     </thead>
 

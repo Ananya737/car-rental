@@ -1,19 +1,31 @@
 {
   "car": [
     {
-      "id": "0ab6",
-      "name": "Ananya Sahu",
+      "name": "Aastha Shukla",
+      "number": "",
       "pickUp": "Pick up location",
       "dropOff": "Drop off location",
       "email": "",
       "chooseCar": "Choose Car",
       "pickUpDate": "",
-      "returnDate": ""
+      "returnDate": "",
+      "id": "01e4"
     },
     {
-      "id": "eae7",
-      "name": "",
+      "name": "Garima Maheshwari",
+      "number": "",
       "pickUp": "Pick up location",
+      "dropOff": "Drop off location",
+      "email": "",
+      "chooseCar": "Choose Car",
+      "pickUpDate": "",
+      "returnDate": "",
+      "id": "84f3"
+    },
+    {
+      "id": "141b",
+      "name": "Ananya Sahu",
+      "pickUp": "Bhopal",
       "dropOff": "Drop off location",
       "email": "",
       "chooseCar": "Choose Car",

@@ -317,7 +317,20 @@ input{
   #signupbtn:hover #loginBtn {
     color: #000000;
   } 
-  
+  #newLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    padding: 0px 15px 0px 15px;
+    border-radius: 50px;
+  }
+  #newLogin:hover{
+    background-color: #f5b754;
+    border: none;
+    color: black;
+  }
   
   
          /* Sign Up Form  */

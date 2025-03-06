@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
-<body>
+<body onload="checkLogin()">
 
     <div class="container">
 
@@ -40,8 +40,14 @@
           <div id="userInfo">
         <i class="fa-solid fa-user" id="userIcon"></i>
         <p id="loginBtn" >Logout</p>
-      </div>
+        </div>
+      
         </a>
+
+        <div id="newLogin">
+          <i class="fa-solid fa-user" ></i>
+          <p id="logoutBtn" >Login</p>
+        </div>
       
     </header>
 
