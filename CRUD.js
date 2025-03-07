@@ -7,6 +7,45 @@ let fetchData=async()=>{
     let data = await res.json();
     console.log(data);
 
+    paginationData(data);
+
+    
+}
+
+
+let Searchhh=async()=>{
+    let inpsearch=document.querySelector("#inpsearch").value.toLowerCase();
+
+    let url='http://localhost:3000/car';
+
+    let res=await fetch(url,{method:"GET"});
+
+    let data= await res.json();
+
+    let filterData= data.filter((e)=>{
+        return e.name.toLowerCase().includes(inpsearch) || e.age.toString().includes(inpsearch);
+    }
+)
+
+paginationData(filterData);
+}
+
+
+let paginationData=(data)=>{
+
+    $('#pagin').pagination({
+        dataSource: data,
+        pageSize: 3,
+        showPageNumbers: false,
+        showNavigator: true,
+        callback: function(data, pagination) {
+          DataShow(data);
+        }
+    })
+}
+
+
+let DataShow=(data)=>{
     let display=document.querySelector("#display");
 
     data.map((e)=>{
@@ -29,7 +68,6 @@ let fetchData=async()=>{
     }
 
     )
-    
 }
 
 

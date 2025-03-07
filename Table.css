@@ -50,6 +50,7 @@ form{
     padding-right: 50px;
     padding-bottom: 50px;
     border-radius: 20px;
+    box-shadow: 40px 40px 5px 5px rgb(61, 61, 61);
 }
 form .container{
     display: flex;
