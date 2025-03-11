@@ -297,9 +297,7 @@ img{
   text-align: start;
   position: absolute;
   top: 20%;
-  left: 10%; 
-
-  
+  left: 10%;  
 }
 .ananya{
   font-size: 90px;
@@ -307,8 +305,7 @@ img{
 .slideOneContent p{
   color: #f5b754;
   font-size: 35px;
-  padding-bottom: 100px;
-  
+  padding-bottom: 100px; 
 }
 .slideOneContent a{
   color: rgb(0, 0, 0);
@@ -542,9 +539,7 @@ img{
   margin-left: 100px;
   margin-right: 100px;
   position: relative;
-  bottom: 40%;
-  
-  
+  bottom: 40%; 
 }
 #marquee img{
   width: 350px;
@@ -721,8 +716,7 @@ img{
     margin-top: 20px;
     color: #f5b754;
     font-size: 13px;
-    font-weight: 600;
-  
+    font-weight: 600; 
 }
 .sec6 #swiperContainer .swiper-slide{
   background: #3b3b3b;
@@ -848,8 +842,7 @@ color: #f5b754;
 .column2 li i{
   color: #f5b754;
   font-size: 9px;
-  margin-right: 10px;
-  
+  margin-right: 10px;  
 }
 
 .column3 p{
@@ -861,9 +854,7 @@ color: #f5b754;
 }
 .column3{
   margin-bottom: 60px;
-  margin-left: 50px;
- 
-  
+  margin-left: 50px;  
 }
 .column3 .c3h{
   color: white;
@@ -880,11 +871,9 @@ color: #f5b754;
   padding: 20px 250px 20px 20px;
   transition: all 1s;
 }
-
 #inpemail::placeholder{
   color: white;
 }
-
 #column3Icon{
   font-size: 20px;
   position: relative;
@@ -913,4 +902,234 @@ color: #f5b754;
   color: #f5b754;
   text-decoration: underline;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:426px) {
+  .navbar{
+    display: none;
+  }
+  #swiperContainer{
+    width: 100px;
+    height: 100px; 
+  }
+  #swiperContainer .swiper-slide img{
+   width: 100%;
+   height: 100%;  
+  }
+ .ananya{
+  font-size: 20px;
+ }
+ .slideOneContent{
+  left: 0%; 
+  margin-left: 10%; 
+}
+.slideOneContent p{
+  
+  font-size: 20px;
+   
+}
+ .ananya1{
+  font-size: 20px;
+ }
+ .slideTwoContent{
+  left: 0%;
+  margin-left: 10%;  
+}
+.slideTwoContent p{
+  
+  font-size: 20px;
+   
+}
+ .ananya2{
+  font-size: 20px;
+ }
+ .slideThreeContent{
+  left: 0%; 
+  margin-left: 10%; 
+}
+.slideThreeContent p{
+  
+  font-size: 20px;
+   
+}
+ .ananya3{
+  font-size: 20px;
+ }
+ .ananya3 p{
+
+ }
+ .slideFourContent{
+  left: 0%;  
+}
+.slideFourContent p{
+  
+  font-size: 20px;
+   
+}
+.slideFourContent{
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+
+  .sec2para{
+    top: 87%;
+    left: 10%;
+    font-weight: 900;
+    font-size: 11px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .sec2{
+    height: 50vh;
+    background: #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #swiper{
+    height: 200px;
+    background-color: #222;
+    width: 70%; 
+  }
+  #marquee{
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 55%;
+    border-block-end-width: 30%; 
+  }
+  #marquee img{
+    width: 250px;
+    border-radius: 30px;
+  }
+  .sec3{
+    height: 60vh;
+  }
+  #sec3heading{
+    font-size: 30px;
+  }
+  .categories{
+    font-size: 10px;
+    
+  }
+  .sec4{
+    height: 120vh;
+  }
+  .cards{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+  }
+  .cardHeading{
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .cardContent{
+    font-size: 12px;
+    color: rgb(196, 195, 195);
+  }
+  .sec4bottom{
+    font-size: 14px;
+    margin-top: 30px;
+    width: 60%;
+    margin-right: 30px;
+  }
+  #sec3heading{
+    font-size: 20px;
+    margin-right: 50px;
+  }
+  .aboutUsContent{
+    flex-direction: column;
+  }
+  .paragraphs{
+    width: 80%;
+    font-size: 10px;
+    margin-left: 0%;
+    bottom: 27%;
+    left: 1%;
+  }
+  .aboutUsImg{
+    position: relative;
+    bottom: 25%; 
+    width: 70%; 
+  }
+  .sec5{
+    height: 85vh;
+   
+  }
+  .testimonials{
+    font-size: 13px;
+    margin-left: 25%;
+  }
+  .sec6{
+    display: none;
+  }
+  .sec6 h1{
+    font-size: 30px;
+    margin-right: 40px;
+  }
+  .sec6 .swiper-slide p{
+    font-size: 8px;
+  }
+  .sec6{
+    height: 45vh;
+  }
+  .footerIcons{
+    display: none;
+  }
+  .footerColumns{
+    flex-direction: column;
+  }
+  .column1{
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .column1 p{
+    font-size: 10px;
+  }
+  .column2{
+    position: relative;
+    right: 30%;
+    bottom: 50%;
+  }
+  .column2 p{
+    font-size: 15px;
+    margin-left: 0px;
+    position: relative;
+    left: 30%;
+  }
+  .column3{
+    margin-bottom: 10px;
+    margin-left: 0px; 
+    position: relative;
+    right: 5%; 
+  }
+  .column3 p{
+    font-size: 10px;
+  }
+  .column3 i{
+    display: none;
+  }
+  #inpemail{
+    margin-top: 0px;
+    padding: 20px 100px 20px 20px;
+    border-radius: 50px;
+  }
 }

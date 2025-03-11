@@ -9,10 +9,10 @@
 </head>
 <body onload="fetchData()">
 
-    <table border="4" cellSpacing="5px" cellPadding="15px" id="display">
-        <div><input type="text" placeholder="Search" id="inpsearch" oninput="Searchhh()"></div>
-        <thead>
-        <tr>
+    <table border="4" cellSpacing="5px" cellPadding="15px" >
+        <input type="text" placeholder="Search" id="inpsearch" oninput="Searchhh()">
+        <thead id="THEAD" cellSpacing="5px" cellPadding="15px">
+        <!-- <tr>
             <th id="th">Name</th>
             <th>Number</th>
             <th>Email</th>
@@ -23,13 +23,11 @@
             <th>Return date</th>
             <th>Delete</th>
             <th id="lastTh">Update</th>
-        </tr>
+        </tr> -->
     </thead>
 
-    <tbody >
-        <tr >
-            
-        </tr>
+    <tbody id="display">
+        
     </tbody>
     </table>
 
@@ -38,7 +36,7 @@
 
     </div>
 
-    <div id="pagin">
+    <div id="pagin" style="z-index: 99; position: absolute;">
 
     </div>
 

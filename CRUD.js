@@ -23,7 +23,7 @@ let Searchhh=async()=>{
     let data= await res.json();
 
     let filterData= data.filter((e)=>{
-        return e.name.toLowerCase().includes(inpsearch) || e.age.toString().includes(inpsearch);
+        return e.name.toLowerCase().includes(inpsearch) ;
     }
 )
 
@@ -35,8 +35,8 @@ let paginationData=(data)=>{
 
     $('#pagin').pagination({
         dataSource: data,
-        pageSize: 3,
-        showPageNumbers: false,
+        pageSize: 4,
+        showPageNumbers: true,
         showNavigator: true,
         callback: function(data, pagination) {
           DataShow(data);
@@ -47,10 +47,11 @@ let paginationData=(data)=>{
 
 let DataShow=(data)=>{
     let display=document.querySelector("#display");
+    display.innerHTML=""
 
     data.map((e)=>{
         display.innerHTML+= `
-                             <tr >
+                             <tr id="TROW">
                              <td>${e.name}</td>
                              <td>${e.number}</td>
                              <td>${e.email}</td>
@@ -205,7 +206,7 @@ let finalUpdate=(id)=>{
 
 let rentt=()=>{
     let inpname=document.querySelector("#name").value;
-    let inpnumber=document.querySelector("#number").value;
+    let inpnumberr=document.querySelector("#numberr").value;
     let inppickup=document.querySelector("#pickUp").value;
     let inpdropoff=document.querySelector("#dropOff").value;
     let inpemail=document.querySelector("#email").value;
@@ -224,7 +225,7 @@ let rentt=()=>{
             body:JSON.stringify(
                 {
                     name:inpname,
-                    number:inpnumber,
+                    number:inpnumberr,
                     pickUp:inppickup,
                     dropOff:inpdropoff,
                     email:inpemail,
