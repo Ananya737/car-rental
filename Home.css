@@ -302,6 +302,7 @@ img{
 .ananya{
   font-size: 90px;
 }
+
 .slideOneContent p{
   color: #f5b754;
   font-size: 35px;
@@ -335,6 +336,16 @@ img{
 }
 .ananya1{
   font-size: 70px;
+}
+#mainbtn{
+  font-size: 20px;
+  border: none;
+  color:black;
+  background-color: #f5b754;
+  border-radius: 90px;
+  padding: 15px 30px 15px 30px;
+  position: absolute;
+  bottom: 10%;
 }
 .slideTwoContent a{
   color: rgb(0, 0, 0);
@@ -371,6 +382,7 @@ img{
 .ananya2{
   font-size: 70px;
 }
+
 .slideThreeContent a{
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -439,7 +451,8 @@ img{
 /* Section 2 */
 
 .sec2{
-  height: 80vh;
+  height: 90%;
+  
   background: #222;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -518,7 +531,7 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 100%;
 }
 .categories{
   margin-top: 20px;
@@ -571,7 +584,7 @@ img{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 90%;
 }
 .card1{
   width: 30%;
@@ -644,7 +657,7 @@ img{
 /* Section 5 */
 
 .sec5{
-  height: 100vh;
+  height: 100%;
   background-color: rgb(57, 56, 56);
   display: flex;
   flex-direction: column;
@@ -933,15 +946,12 @@ color: #f5b754;
  .ananya{
   font-size: 20px;
  }
+
  .slideOneContent{
   left: 0%; 
   margin-left: 10%; 
 }
-.slideOneContent p{
-  
-  font-size: 20px;
-   
-}
+
  .ananya1{
   font-size: 20px;
  }
@@ -1018,7 +1028,7 @@ color: #f5b754;
     border-radius: 30px;
   }
   .sec3{
-    height: 60vh;
+    height: 70vh;
   }
   #sec3heading{
     font-size: 30px;
@@ -1028,7 +1038,7 @@ color: #f5b754;
     
   }
   .sec4{
-    height: 120vh;
+    height: 140vh;
   }
   .cards{
     margin-left: 100px;
@@ -1071,7 +1081,7 @@ color: #f5b754;
     width: 70%; 
   }
   .sec5{
-    height: 85vh;
+    height: 100vh;
    
   }
   .testimonials{
@@ -1107,7 +1117,7 @@ color: #f5b754;
   .column2{
     position: relative;
     right: 30%;
-    bottom: 50%;
+    bottom: 100%;
   }
   .column2 p{
     font-size: 15px;
@@ -1116,7 +1126,7 @@ color: #f5b754;
     left: 30%;
   }
   .column3{
-    margin-bottom: 10px;
+    margin-bottom: 90px;
     margin-left: 0px; 
     position: relative;
     right: 5%; 
@@ -1133,3 +1143,4 @@ color: #f5b754;
     border-radius: 50px;
   }
 }
+
