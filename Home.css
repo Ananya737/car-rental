@@ -864,10 +864,12 @@ color: #f5b754;
 .c3h{
   color: white;
   font-size: 20px;
+ 
 }
 .column3{
   margin-bottom: 60px;
-  margin-left: 50px;  
+  margin-left: 50px; 
+ 
 }
 .column3 .c3h{
   color: white;
@@ -1011,7 +1013,7 @@ color: #f5b754;
     margin-bottom: 0px;
   }
   #swiper{
-    height: 200px;
+    height: 185px;
     background-color: #222;
     width: 70%; 
   }
@@ -1067,6 +1069,7 @@ color: #f5b754;
   }
   .aboutUsContent{
     flex-direction: column;
+    margin-left: 30px;
   }
   .paragraphs{
     width: 80%;
@@ -1078,11 +1081,12 @@ color: #f5b754;
   .aboutUsImg{
     position: relative;
     bottom: 25%; 
+    left: 10%;
     width: 70%; 
   }
   .sec5{
-    height: 100vh;
-   
+    height: 110%;
+    
   }
   .testimonials{
     font-size: 13px;
@@ -1099,7 +1103,11 @@ color: #f5b754;
     font-size: 8px;
   }
   .sec6{
-    height: 45vh;
+    display: none;
+  }
+  footer{
+    position: relative;
+    bottom: 28%;
   }
   .footerIcons{
     display: none;
@@ -1116,7 +1124,7 @@ color: #f5b754;
   }
   .column2{
     position: relative;
-    right: 30%;
+    right: 20%;
     bottom: 100%;
   }
   .column2 p{
@@ -1129,7 +1137,9 @@ color: #f5b754;
     margin-bottom: 90px;
     margin-left: 0px; 
     position: relative;
-    right: 5%; 
+    right: 5%;
+    display: none; 
+    
   }
   .column3 p{
     font-size: 10px;
@@ -1142,5 +1152,35 @@ color: #f5b754;
     padding: 20px 100px 20px 20px;
     border-radius: 50px;
   }
+  .footerBottom{
+    width: 90%;
+    margin-left: 20px;
+    
+  }
+  .footerBottom p{
+    display: flex;
+    justify-content: center;
+  }
+  .carOne{
+    top: 40%;
+    left: 20%;
+    width: 200px;
+}
+.carOne{
+  animation: car 1s forwards;
+}
+@keyframes car {
+  0%{
+      left: 0%;
+      
+  }
+  100%{
+      left: 50%;
+      
+  }
+}
+#loading-bar {
+    left: 20px;  
+}
 }
 
