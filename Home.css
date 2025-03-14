@@ -553,7 +553,7 @@ img{
   color: white;
 }
 #marquee{
-  height: 500px;
+  height: 550px;
   margin-left: 100px;
   margin-right: 100px;
   position: relative;
@@ -563,6 +563,7 @@ img{
   width: 350px;
   margin-right: 50px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 
@@ -575,11 +576,32 @@ img{
   flex-direction: column;
   color: white;
 }
-.marqueeimg div p{
+.carName{
   font-size: 25px;
   position: relative;
-  top: 17%;
+  top: 30%;
   left: 5%;
+}
+.price{
+  position: relative;
+  top: 70%;
+  left: 20%;
+  font-size: 15px;
+  border: none;
+  width: 50%;
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.price:hover{
+  background-color: black;
+  color: white;
 }
 
 
@@ -1032,7 +1054,12 @@ color: #f5b754;
     border-radius: 30px;
   }
   .sec3{
-    height: 70vh;
+    height: 80vh;
+  }
+  .price{
+    left: 20%;
+    font-size: 13px;
+    top: 65%;
   }
   #sec3heading{
     font-size: 30px;
