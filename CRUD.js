@@ -153,7 +153,9 @@ let formFill=async(id)=>{
     </form> `
 
     document.querySelector("#showData").innerHTML=formData;
-
+    document.querySelector("#pagin").style.display="none" ;
+    document.querySelector("#display").style.display="none" ;
+    
 
 }
 
