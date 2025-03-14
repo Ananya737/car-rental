@@ -347,6 +347,11 @@ img{
   position: absolute;
   bottom: 10%;
 }
+#mainbtn:hover{
+  background-color: white;
+  padding-right: 50%;
+  transition: all 0.5s;
+}
 .slideTwoContent a{
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -948,7 +953,6 @@ color: #f5b754;
  .ananya{
   font-size: 20px;
  }
-
  .slideOneContent{
   left: 0%; 
   margin-left: 10%; 
@@ -981,9 +985,7 @@ color: #f5b754;
  .ananya3{
   font-size: 20px;
  }
- .ananya3 p{
 
- }
  .slideFourContent{
   left: 0%;  
 }
