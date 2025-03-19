@@ -24,7 +24,7 @@
   }
   @keyframes loading {
     0% {
-      width: 90%;
+      width: 0%;
     }
     100% {
       width: 90%;

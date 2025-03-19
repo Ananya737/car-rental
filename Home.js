@@ -1,5 +1,5 @@
 window.onload = function () {
-    // Simulate a loading delay (you can adjust this as needed)
+    // Simulate a loading delay
     setTimeout(function () {
       // Animate the curtain effect
       document.getElementById('curtain').style.transform = 'translateY(0)';
@@ -9,9 +9,10 @@ window.onload = function () {
         document.getElementById('loader-overlay').style.display = 'none';
         document.getElementById('curtain').style.display = 'none';
         document.getElementById('content').style.display = 'block';
+        
       }, 1000); // Time for curtain to transition
      
-    }, 2000); // Time before the curtain starts moving (adjust as necessary)
+    }, 2000); // Time before the curtain starts moving
   };
 
 // Swiper  1
