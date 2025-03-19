@@ -954,12 +954,8 @@ color: #f5b754;
   text-decoration: underline;
   cursor: pointer;
 }
-#checkbox{
-  display: none;
-}
-#bars{
-  display: none;
-}
+
+
 
 #verticalNav{
   display: none;
@@ -967,29 +963,6 @@ color: #f5b754;
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:426px) {
- .navbarContent{
-  display: none;
- }
- #contact{
-  display: none;
- }
- #signupbtn{
-  display: none;
- }
- #bars{
-  display: block;
-}
 
 .verticalNavbarContent{
   display: flex;
@@ -1019,7 +992,28 @@ color: #f5b754;
 .diffColor{
   color: #f5b754;
 }
-#checkbox:checked~#verticalNav{
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:426px) {
+ .navbarContent{
+  display: none;
+ }
+ #contact{
+  display: none;
+ }
+ #signupbtn{
+  display: none;
+ }
+
+#click:checked ~ #verticalNav {
   display: block;
 }
   #swiperContainer{
