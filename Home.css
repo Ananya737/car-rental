@@ -202,9 +202,10 @@ img{
     align-items: center;
     color: white;
     height: 12%;
-   position: absolute;
+   position: fixed;
    left: 0;
    top: 0;
+   z-index: 999;
    width: 100%;
    border-radius: 0px 0px 90px 90px;
   }
@@ -990,7 +991,9 @@ color: #f5b754;
   display: none;
 }
 
-
+#clicked{
+display: none;
+}
 
 
 
@@ -1018,7 +1021,6 @@ color: #f5b754;
 
 #clicked:checked~ #verticalNav{
   display: block;
-
 }
 
 #clicked:checked~ .verticalNavbarContent{
